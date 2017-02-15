@@ -12,10 +12,6 @@ $(function() {
 });
 
 function setEventListeners(){
-	$('#txtFilter').keyup(() =>{
-			Model.filterHandler(Model.getToys(), $('#txtFilter').val());
-	});
-
 	$('#listAllButton').click((event) => {
 		Model.loadToys();
 		Events.listAllView(event);
