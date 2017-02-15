@@ -1,5 +1,7 @@
 "use strict";
 
+console.log("CONTROLLER");
+
 let Model = require('./Model.js'),
 		Events = require('./Events.js');
 

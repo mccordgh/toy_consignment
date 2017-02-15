@@ -6,8 +6,9 @@ let db = require('./dbInteractions.js'),
 
 let Model = {
 	initialize(){
-		View.setupViews();
+		console.log("init");
 		this.loadToys();
+		View.setupViews();
 	},
 	filterHandler(toys, toyFilter){
 		let tmpArray = $.grep(toys, function(i) {
@@ -16,9 +17,11 @@ let Model = {
 		View.displayToys(tmpArray);
 	},
 	loadToys(){
+		console.log("LOAD TOYS");
 		db.getAllToys()
 		.then((data) => {
 			toys = data;
+			console.log("TOYS", data);
 			View.setToyArray(toys);
 			View.displayToys(toys);
 			$('.cardImage').click((event) => {
