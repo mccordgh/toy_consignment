@@ -37,10 +37,3 @@ Create a form for addding a new toy to Firebase. Make sure the form fields match
 
 You will also need to add a button to each toy that allows the user to delete it from the list and from Firebase.
 
-## Stretch goals
-1. Add a form for editing a toy and saving the changes.   
-2. Create a form for registering/logging in a user. 
-3. When the signed-in user adds a toy to Firebase, save the user id to the toy. 
-4. Allow the user to view only toys he/she added to the db.  
-
-
